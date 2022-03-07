@@ -1,11 +1,25 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import Dropdown from './Dropdown';
+import './style.css';
 
+let list = [
+  {
+    name: 'one',
+    value: 1,
+  },
+  {
+    name: 'two',
+    value: 2,
+  },
+  {
+    name: 'three',
+    value: 3,
+  },
+];
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <Dropdown options={list} title={'Select a Value'} />
     </div>
   );
 }
